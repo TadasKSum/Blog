@@ -1,0 +1,192 @@
+/* HomePage.js */
+
+.container {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    overflow: auto;
+    width: 1060px;
+    margin: 10px auto 5px auto;
+}
+
+/* Post.js */
+
+.post {
+    display: flex;
+    flex-direction: column;
+    width: 180px;
+    height: 230px;
+    padding: 10px;
+    border: black solid 1px;
+    overflow: hidden;
+}
+
+.image {
+    width: 100%;
+    height: 110px;
+    img {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.title {
+    max-height: 40px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: 0.2s;
+    &:hover {
+        color: blue;
+    }
+}
+
+.userLink {
+    color: blue;
+    cursor: pointer;
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+/* Pagination.js */
+
+.pagination {
+    display: flex;
+    margin: 5px auto;
+    width: 200px;
+    height: 30px;
+    gap: 5px;
+    justify-content: center;
+    align-items: center;
+    input {
+        width: 30px;
+    }
+}
+
+.arrow {
+    font-size: 22px;
+    cursor: pointer;
+    &:hover {
+        font-weight: bolder;
+        color: blue;
+    }
+}
+
+/* NavBar.js */
+
+.navBar {
+    width: 1000px;
+    margin: 5px auto;
+    display: flex;
+    gap: 5px;
+    justify-content: space-between;
+}
+
+.navButton {
+    text-align: center;
+    padding: 5px;
+    border-radius: 5px;
+    border: solid black 1px;
+    font-size: 18px;
+    cursor: pointer;
+    background-color: cornflowerblue;
+    font-weight: bold;
+    color: white;
+    a:link {
+        text-decoration: none;
+        color: white;
+    }
+    a:visited {
+        text-decoration: none;
+        color: white;
+    }
+    &:hover {
+        background-color: crimson;
+    }
+}
+
+.d-flex {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+
+/* Login.js */
+
+.login {
+    h2 {
+        text-align: center;
+    }
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 360px;
+    height: 340px;
+    padding: 10px;
+    border: black solid 1px;
+    margin: 20px auto;
+    gap: 10px;
+    input {
+        height: 22px;
+        padding: 3px;
+        width: 300px;
+    }
+}
+
+/* CreatePostPage.js */
+
+.createPost {
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    margin: 10px auto;
+    gap: 10px;
+    h2 {
+        text-align: center;
+    }
+    input {
+        height: 22px;
+        padding: 3px;
+    }
+}
+
+.description {
+    height: 100px;
+    overflow: auto;
+    padding: 3px;
+}
+
+/* SinglePost.js */
+
+.singlePost {
+    display: flex;
+    width: 70vw;
+    height: 80vh;
+    margin: 10px auto;
+    border: black solid 1px;
+    padding: 10px;
+    gap: 10px;
+}
+
+.postBox {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    img {
+        width: 100%;
+        max-height: 100%;
+        height: auto;
+    }
+}
+
+/* Filter.js */
+
+.filter {
+    display: flex;
+    height: 30px;
+    padding: 5px;
+    width: 1060px;
+    margin: 2px auto;
+    gap: 10px;
+}
